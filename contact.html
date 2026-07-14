@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Cedric</title>
+<meta name="description" content="Get in touch with Cedric, contact form with client-side validation.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="brand-mark">C</span>Cedric</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="padding:3rem 0 3.5rem;">
+    <div class="container">
+      <h1 style="font-size:clamp(2rem,4vw,2.8rem);">Let's talk.</h1>
+      <p class="hero-lede">Whether it's a writing project, a security question, or just feedback on this site, the form below reaches me directly.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="planner-panel">
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="cName">Name</label>
+            <input type="text" id="cName" name="name" placeholder="Your full name">
+            <span class="error-text" id="err-cName"></span>
+          </div>
+          <div class="form-row">
+            <label for="cEmail">Email address</label>
+            <input type="email" id="cEmail" name="email" placeholder="you@example.com">
+            <span class="error-text" id="err-cEmail"></span>
+          </div>
+          <div class="form-row">
+            <label for="cPhone">Phone number</label>
+            <input type="tel" id="cPhone" name="phone" placeholder="Digits only, e.g. 08012345678">
+            <span class="error-text" id="err-cPhone"></span>
+          </div>
+          <div class="form-row">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" name="message" placeholder="Tell me a bit about what you need"></textarea>
+            <span class="error-text" id="err-cMessage"></span>
+          </div>
+          <button type="submit" class="btn btn-primary" style="border:none;">Send message</button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <div class="section-head" style="margin-bottom:1.2rem;">
+          <span class="eyebrow">Direct lines</span>
+          <h2>Other ways to reach me</h2>
+        </div>
+        <div class="log-item">
+          <span class="log-tag mono">EMAIL</span>
+          <div><strong><a href="mailto:o.ikechukwu5323@miva.edu.ng" style="border-bottom:1px solid var(--gold);">o.ikechukwu5323@miva.edu.ng</a></strong><p style="margin:.2rem 0 0;color:var(--slate);font-size:.9rem;">Best way to reach me directly.</p></div>
+        </div>
+        <div class="log-item">
+          <span class="log-tag mono">BASE</span>
+          <div><strong>Enugu, Nigeria</strong><p style="margin:.2rem 0 0;color:var(--slate);font-size:.9rem;">Open to remote work across time zones.</p></div>
+        </div>
+        <div class="log-item">
+          <span class="log-tag mono">FOCUS</span>
+          <div><strong>Cybersecurity writing &amp; cloud security learning</strong><p style="margin:.2rem 0 0;color:var(--slate);font-size:.9rem;">Also open to tutoring and community/literacy collaborations.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p>&copy; 2026 Cedric. Built for COS 106, Introduction to Web Technologies, Miva Open University.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
